@@ -6,9 +6,12 @@
         <style>
             body{
                 background-image: url("https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/seasonal/snowy-slope-with-trees.png");
+                position:fixed;
+                bottom: 0;
+                right:0;
+                width:100%;
+                width:100%;
                 backdrop-filter:blur(3px);
-                height:664px;
-                width:1181px;
                 background-size:100%, 100%;
                 background-repeat: no-repeat;
                 overflow:hidden;
@@ -23,30 +26,32 @@
                 height:30px;
             }
             .input{
-                margin-top: 25px;;
-                margin-bottom: 25px;
+                margin-top: 5%;
+                margin-bottom: 2%;
             }
             #guest{
                 width:200px;
                 background-color:rgb(250,250,250);
-                background: size 1.5em,1.5em;
+                background-size: 1.5em,1.5em;
                 border-radius: 100%;
                 padding:15px;
                 border: 15px solid rgb(0,0,0);
-                margin-top: 175px;
-                margin-bottom: 50px;
-                margin-right:auto;
+                margin-top:15%;
+                margin-bottom: 5%;
+                display: block;
                 margin-left:auto;
+                margin-right:auto;
+                width: 20%;
+
             }
         </style>
     </head>
 
 
     <body>
-    <center>
     <form>
     <img id="guest" src="https://icons.veryicon.com/png/o/miscellaneous/youyinzhibo/guest.png">
-    <div id="input">
+    <div class="input" style="text-align: center;">
     <input id="u" type="text" placeholder="username">
     <br><br>
     <input id="p" type="password" placeholder="password">
@@ -54,6 +59,5 @@
     <button id="s" type="button">Submit</button>
     </div>
     </form>
-    </center>
     </body>
 </html>
